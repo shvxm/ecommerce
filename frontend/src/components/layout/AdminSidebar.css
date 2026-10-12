@@ -1,0 +1,170 @@
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+
+  background: #111111;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+
+  border-right: 1px solid #262626;
+}
+
+.admin-sidebar-header {
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+
+  border-bottom: 1px solid #292929;
+}
+
+.admin-logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.admin-logo span {
+  color: #b8b8b8;
+}
+
+.admin-sidebar-close {
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.admin-panel-label {
+  padding: 25px 24px 12px;
+
+  color: #777777;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.6px;
+}
+
+.admin-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding: 0 13px;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 12px 13px;
+
+  border-radius: 9px;
+
+  color: #a7a7a7;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.admin-nav-item:hover {
+  background: #1c1c1c;
+  color: #ffffff;
+}
+
+.admin-nav-item.active {
+  background: #ffffff;
+  color: #111111;
+  font-weight: 650;
+}
+
+.admin-sidebar-bottom {
+  margin-top: auto;
+
+  padding: 18px 13px;
+
+  border-top: 1px solid #292929;
+}
+
+.admin-logout-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 12px 13px;
+
+  background: transparent;
+  border: none;
+
+  border-radius: 9px;
+
+  color: #999999;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition: all 0.2s ease;
+}
+
+.admin-logout-button:hover {
+  background: #1c1c1c;
+  color: #ffffff;
+}
+
+.admin-sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .admin-sidebar.admin-sidebar-open {
+    transform: translateX(0);
+  }
+
+  .admin-sidebar-close {
+    display: flex;
+  }
+
+  .admin-sidebar-overlay {
+    display: block;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 999;
+  }
+}

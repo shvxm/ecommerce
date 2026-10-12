@@ -1,0 +1,320 @@
+.edit-product-page {
+  min-height: calc(100vh - 72px);
+  background: #f7f6f2;
+  padding: 42px 7%;
+  color: #111;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.edit-product-header {
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+
+.edit-product-header > div {
+  margin-top: 24px;
+}
+
+
+.back-button {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  color: #555;
+}
+
+
+.back-button:hover {
+  color: #000;
+}
+
+
+.page-eyebrow {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+
+.edit-product-header h1 {
+  font-size: 38px;
+  margin: 0 0 8px;
+  letter-spacing: -1px;
+}
+
+
+.edit-product-header p:last-child {
+  margin: 0;
+  color: #777;
+  font-size: 15px;
+}
+
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.edit-product-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e8e6e1;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+
+.edit-product-card-header {
+  padding: 25px 28px;
+  border-bottom: 1px solid #eceae6;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.edit-product-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.edit-product-card-header h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+
+.edit-product-card-header p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+}
+
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.edit-product-card form {
+  padding: 30px;
+}
+
+
+.edit-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+
+.edit-form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+
+.edit-form-group input,
+.edit-form-group textarea,
+.edit-form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 13px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+
+.edit-form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+.edit-form-group input:focus,
+.edit-form-group textarea:focus,
+.edit-form-group select:focus {
+  border-color: #111;
+  background: #fff;
+}
+
+
+.edit-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+
+.field-hint {
+  font-size: 12px;
+  color: #888;
+  margin-top: 7px;
+}
+
+
+
+/* ========================================
+   MESSAGES
+======================================== */
+
+.edit-product-error {
+  background: #fff0f0;
+  border: 1px solid #ffd0d0;
+  color: #c62828;
+  padding: 12px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+
+.edit-product-success {
+  background: #eefaf0;
+  border: 1px solid #ccebd1;
+  color: #26733b;
+  padding: 12px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+.edit-product-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+
+.cancel-button,
+.update-button {
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+.cancel-button {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+
+.cancel-button:hover {
+  background: #f5f5f5;
+}
+
+
+.update-button {
+  background: #111;
+  color: #fff;
+  border: 1px solid #111;
+}
+
+
+.update-button:hover {
+  background: #2a2a2a;
+}
+
+
+.update-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+/* ========================================
+   LOADING
+======================================== */
+
+.edit-product-loading {
+  max-width: 900px;
+  margin: 100px auto;
+  text-align: center;
+  color: #777;
+  font-size: 15px;
+}
+
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .edit-product-page {
+    padding: 30px 18px;
+  }
+
+
+  .edit-product-header h1 {
+    font-size: 30px;
+  }
+
+
+  .edit-product-card form {
+    padding: 22px;
+  }
+
+
+  .edit-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+
+  .edit-product-actions {
+    flex-direction: column-reverse;
+  }
+
+
+  .cancel-button,
+  .update-button {
+    width: 100%;
+  }
+
+}

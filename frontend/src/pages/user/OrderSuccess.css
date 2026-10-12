@@ -1,0 +1,128 @@
+.order-success-page {
+  min-height: calc(100vh - 120px);
+  background: #f7f8fa;
+  padding: 70px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.order-success-card {
+  width: 100%;
+  max-width: 580px;
+  padding: 45px 35px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.success-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: #f0fdf4;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-success-card h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 29px;
+}
+
+.order-success-card > p {
+  max-width: 450px;
+  margin: 13px auto 28px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.order-id-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.order-id-box > svg {
+  color: #374151;
+}
+
+.order-id-box div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.order-id-box span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.order-id-box strong {
+  color: #111827;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.success-actions {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.view-orders-btn,
+.continue-btn {
+  height: 47px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.view-orders-btn {
+  background: #111827;
+  color: #ffffff;
+}
+
+.view-orders-btn:hover {
+  background: #000000;
+}
+
+.continue-btn {
+  border: 1px solid #d1d5db;
+  color: #374151;
+  background: #ffffff;
+}
+
+.continue-btn:hover {
+  background: #f9fafb;
+}
+
+@media (max-width: 600px) {
+  .order-success-page {
+    padding: 40px 15px;
+  }
+
+  .order-success-card {
+    padding: 35px 20px;
+  }
+
+  .order-success-card h1 {
+    font-size: 24px;
+  }
+}
