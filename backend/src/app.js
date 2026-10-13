@@ -33,6 +33,7 @@ app.use(helmet());
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://frontend-cyan-rho-32.vercel.app",
   "https://frontend-git-main-shvxm.vercel.app",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
