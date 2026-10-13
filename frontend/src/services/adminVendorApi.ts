@@ -127,3 +127,16 @@ export const updateVendorStatus = async (
 
   return response.data.data;
 };
+
+
+export const approveVendor = async (
+  vendorId: string
+): Promise<AdminVendor> => {
+  const response = await api.patch<VendorResponse>(
+    `/admin/vendors/${vendorId}/approve`,
+    {},
+    { headers: getAuthHeaders() }
+  );
+
+  return response.data.data;
+};
