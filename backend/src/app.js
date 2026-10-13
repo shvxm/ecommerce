@@ -29,12 +29,28 @@ const app = express();
 app.use(helmet());
 
 // CORS
+
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://frontend-git-main-shvxm.vercel.app",
+  process.env.FRONTEND_URL,
+].filter(Boolean);
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error("Not allowed by CORS"));
+    },
     credentials: true,
   })
 );
+
+
 
 // JSON body parser
 app.use(express.json());
